@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>
+          {% block title %}
+          Grand Coffee
+          {% endblock title %}
+      </title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+    {% include 'components/_styles.html' %}
+</head>
+<body>
+
+{% block header %}
+{% include 'layout/header.html' %}
+{% endblock header %}
+
+
+
+{% block banner %}
+{% include 'components/_banner.html' %}
+{% endblock banner %}
+
+
+
+{% block main %}
+{% endblock main %}
+
+
+{% block footer %}
+{% include 'layout/footer.html' %}
+{% endblock footer %}
+
+
+
+
+{% include 'components/_scripts.html' %}
+</body>
+</html>
